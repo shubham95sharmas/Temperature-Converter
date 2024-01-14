@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.training-section {
+  width: 100%;
+  padding-bottom: 50px;
+  background-image: url("transparent.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+.training-section h1{
+  text-align: center;
+ padding: 25px 0px;
+}
+.container{
+  width: 1170px;
+  margin: auto;
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.training-items{
+  flex-basis:23% ;
+  margin: 10px 0px;
+  box-shadow: 0 0 10px 3px rgb(196, 194, 194);
+  text-align: center;
+  padding: 20px 0px;
+}
+.training-items h3{
+  padding: 10px 0px ;
+}
+.training-items p {
+  font-size: 14px;
+ 
+}
+.training-items button{
+  background-color: blue;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+.training-items:hover{
+  background: rgb(143, 106, 177);
+}
+.training-items :hover h3,.training-items:hover p {
+  color: white;
+}
+.training-items:hover button{
+  background: white;
+  color:black;
+}
+@media only screen and (min-width:200px) and (max-width:767px){
+  .container{
+    width: 100%;
+    flex-direction: column;
+  }
+  .training-items{
+    margin: 10px;
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script> 
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="js/custom.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PORTFO<span>LIO</span></div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+
+        <div class="text">
+            <p>Hello, I am</p>
+            <h1>Shubham Sharma</h1>
+            <p>and I am a Frontend Developer</p>
+            <button class="c-btn">Hire me</button>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="section-info">
+            <h1>About</h1>
+            <p>Who I am?</p>
+        </div>
+
+        <div class="about-row">
+            <div class="about-left-col">
+            
+                   <div class="">
+                   <div class="userImage">
+                    <img src="../portfolioimg/photome.jpg" width="345" height="390" alt=""/>
+                   </div>
+                   </div>
+            </div>
+        </div>
+            <div class="about-right-col">
+                <p id="p-title">Hello I am a Frontend Developer</p>
+                <p>
+                    This online generator helps with creating shapes for images using the css clip-path property. 
+                    Select from a range of preset shapes or create a custom shape, ...
+                </p>
+                <button class="c-btn"> Download cv</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-info">
+            <h1 style="color: white;">Skills</h1>
+            <p>Who I am?</p>
+        </div>
+
+        <div class="skill-row">
+            <div class="skill-left-col">
+              <p>
+                Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, 
+                the unity and coherence of ideas among sentences is what constitutes a paragraph.
+              </p> 
+              <button class="c-btn">Read more</button>
+            </div>
+            <div class="skill-right-col">
+                <div class="progress-div">
+                    <p>
+                    <span>HTML</span><br>
+                    <progress value="80" max="100"></progress>
+                    <span>80%</span>
+                    </p>
+                    <p>
+                    <span>CSS</span><br>
+                    <progress value="80" max="100"></progress>
+                    <span>80%</span>
+                    </p>
+                
+                    <p>
+                    <span>Javascript</span><br>
+                    <progress value="80" max="100"></progress>
+                    <span>70%</span>
+                    </p>
+                    <p>
+                    <span>Jquery</span><br>
+                    <progress value="80" max="100"></progress>
+                    <span>80%</span>
+                    </p>
+                    <p>
+                    <span>Bootstrap</span><br>
+                    <progress value="80" max="100"></progress>
+                    <span>80%</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Projects">
+        
+    </section>
+
+    <section id="contact">
+        <div class="section-info" style="color: white;">
+            <h1 style="color: white;">Get in touch</h1>
+            <p style="color: white;">I am available</p>
+        </div>
+        <div class="contact-row">
+            <div class="contact-left-column">
+               <img src="../portfolioimg/b3.png">
+            </div>
+            <div class="contact-right-column">
+                <form>
+                    <h2>Connect with me</h2>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="E-mail">
+                    <br>
+                    <textarea rows="10" columns="40" placeholder="Message"></textarea>
+                    <br>
+                    <button class="c-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <h2>Developed By <br> Shubham Sharma</h2>
+        <img src="../portfolioimg/icon.png" width="100">
+    </section>
+
+    <script src="ripples\jquery.ripples-min.js"></script>
+    <script>
+        jQuery(document).ready(function(){$('header').ripples({
+  dropRadius: 20,
+  perturbance: 0.03,
+  ...
+});});
+    </script>
+</body>
+</html>

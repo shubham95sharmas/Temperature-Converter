@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../portfolioimg/b1.png"),url("../portfolioimg/bg1.jpeg");
+    background-size: 50% 100%, cover;
+    background-position: right,center;
+    background-repeat: no-repeat,no-repeat;
+    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+}
+.logo{
+    color: white;
+    font-size: 50px;
+    padding-left: 100px;
+    letter-spacing: 5px;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.menu{
+    margin-right: 100px;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo span{
+    color: #e74c3c;
+}
+.menu a:hover{
+    background-color: #e74c3c;
+    transition: 0.4s;
+}
+.text{
+    color: white;
+    margin-top: 100px;
+    margin-left: 100px;
+    max-width: 450px;
+}
+.text h1{
+    font-size: 50px;
+    margin: 10px 0px;
+}
+.text p{
+    font-size: 25px;
+}
+.c-btn{
+    border: none;
+    background-color: #e74c3c;
+    padding: 10px;
+    outline: none;
+    margin-top: 20px;
+    color: white;
+   
+}
+#about{
+    padding: 100px 50px;
+}
+.section-info{
+    font-weight: bold;
+    text-align: center;
+}
+.section-info h1{
+    font-size: 50px;
+}
+.section-info p{
+    font-size: 25px;
+    color: #e74c3c;
+}
+.about-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.about-left-col{
+    flex-basis: 50%;
+}
+.about-left-col img{
+    width: 100%;
+    
+    padding: 50px;
+}
+.about-right-col{
+    flex-basis: 50%;
+}
+#p-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.about-right-col p{
+    font-size: 20px;
+    text-align: justify;
+}
+#skills{
+padding: 100px 50px;
+background-image: url("../portfolioimg/bg2.jpg");
+background-size: cover;
+color: white;
+}
+.skill-row{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    background-color: rgb(45,52,54);
+    padding: 50px;
+}
+.skill-left-col{
+    flex-basis: 50%;
+    text-align: justify;
+}
+.skill-right-col{
+    flex-basis: 50%;
+}
+.skill-left-col p{
+    font-size: 20px;
+}
+progress{
+ width: 80%;
+}
+.progress-div{
+    width: 70%;
+    margin: auto;
+}
+.progress-div p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-left: 80px;
+    text-align: justify; 
+}
+#contact{
+    padding: 100px 50px;
+    background: linear-gradient(160deg,#e74c3c 45%, white 0%);
+}
+.contact-row{
+    display:flex;
+    justify-content:center;
+    align-items:center ;
+    flex-wrap: wrap;
+}
+.contact-left-column{
+    flex-basis: 50%;
+}
+.contact-right-column{
+    flex-basis: 50%;
+}
+.contact-right-column form{
+    text-align: center;
+}
+.contact-right-column form h2{
+    margin-bottom: 20px;
+}
+.contact-right-column form input{
+    width:60% ;
+    padding:10px ;
+    margin-bottom: 10px;
+}
+.contact-right-column form textarea{
+    width: 60%;
+    padding: 10px;
+}
+#footer{
+    background-color: #e74c3c;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+
+  .userImage{
+    padding: 2.5rem;
+    transition: all 1s;
+    animation: scaleimage 5s linear infinite;
+    width: 345px;
+    height: 390px;
+  }
+  @keyframes scaleimage {
+    0%{
+      scale:1;
+      filter:grayscale(1)
+    }
+    50%{
+      filter: grayscale(0);
+      box-shadow: 3px 3px 10px black;
+      scale: 0.9;
+    }
+    100%{
+      scale: 1;
+      filter: grayscale(1);
+    }
+  }
+  .userImage{
+    z-index: 9;
+    width: 100%;
+  }
+  .icons{
+    z-index: 9;
+  }
+  .icondots{
+    bottom: -1rem;
+    right: 0;
+    animation: dotsanimation 5s linear infinite;
+  }
+  @keyframes dotsanimation{
+    50%{
+      transform: translateY(-15px);
+    }
+  }
+  .iconzigzag{
+   z-index: 9;
+   left: -0.3rem;
+   top: 1.5rem;
+   animation: zigzagAnimation 5s infinite;
+  }
+  @keyframes zigzagAnimation{
+    50%{
+      left: 5%;
+      top: 3%;
+    }
+  }
+  .iconcube{
+    z-index: 9;
+    top: -0.8em;
+    right: 1em;
+    animation-name: cubeRotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    margin-left: 50px;
+  }
+  @keyframes cubeRotate{
+    0%{
+      transform: rotateY(0deg) translateY(0px);
+    }
+    50%{
+      transform: rotate(180deg) translateY(-12px);
+    }
+    100%{
+      transform: rotateY(360deg) translateY(0px);
+    }
+  }
+  .iconcircle{
+    z-index: 9;
+    left: 0;
+    bottom: 0;
+    animation-name: shakeeffect;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+  }
+  @keyframes shakeeffect{
+    50%{
+      
+      left: 5%;
+      bottom: 10%;
+    }
+  }
+  .iconplus{
+    z-index: 9;
+    top: -0.8rem;
+    left: 50%;
+    animation: shakeeffectplus 5s ease-in infinite;
+  }
+  @keyframes shakeeffectplus{
+    50%{
+      top: 2%;
+      left: 48%;
+    }
+  }
+@media only screen and (max-width:770px){
+    header{
+        background-image:url("../portfolioimg/bg1.jpeg");
+        background-size: cover;
+    }
+    .menu a{display:none;}
+    .logo{
+        padding-left:50px;
+    }
+    .text{
+        margin-left:50px;
+    }
+.about-left-col{
+    flex-basis: 100%;
+}
+.about-left-col img{
+    width: 100%;
+    
+    padding: 50px;
+}
+.about-right-col{
+    flex-basis: 100%;
+}
+.skill-left-col{
+    flex-basis: 100%;
+    
+}
+.skill-right-col{
+    flex-basis: 100%;
+    
+}
+progress{
+    width: 80%;
+   }
+   .progress-div{
+       width: 100%;
+       margin: auto;
+       padding-top: 100px;
+   }
+   .progress-div p{
+       margin-bottom: 10px;
+       font-size: 20px;
+       padding-left: 20px;
+       text-align: justify; 
+   }
+   .contact-left-column{
+    flex-basis: 100%;
+}
+.contact-right-column{
+    flex-basis: 100%;
+}
+}

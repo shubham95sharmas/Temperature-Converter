@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="again.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <script>
+        function display(){
+            document.getElementById("show").style.marginLeft = "-900px";
+        }
+    </script>
+</head>
+
+<body >
+    <!--header start-->
+    <div class="navbar">
+        <div class="nav-logo vborder">
+            <div class="logo">
+               <img src="amalogo.png"> 
+            </div>
+        </div>
+        <div class="nav-address vborder">
+            <p class="add-first">Hello</p>
+           
+                
+                <span class="address"><i class="fa-solid fa-location-dot"></i>Select Your address</span>
+            
+        </div>
+        <div class="nav-search ">
+           <div class="box-left">
+            <div class="dropdown">
+                <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  All
+                </a>
+              
+                <ul class="dropdown-menu scroll">
+                  <li><a class="dropdown-item" href="#">All Catogaries</a></li>
+                  <li><a class="dropdown-item" href="#">Alexa Skills</a></li>
+                  <li><a class="dropdown-item" href="#">Amazon devices</a></li>
+                  <li><a class="dropdown-item" href="#">Amazon Fashion</a></li>
+                  <li><a class="dropdown-item" href="#">Amazon Fresh</a></li>
+                  <li><a class="dropdown-item" href="#">Amazon Pharmaxy</a></li>
+                  <li><a class="dropdown-item" href="#">Apps & Games</a></li>
+                  <li><a class="dropdown-item" href="#">Audible Audiobooks</a></li>
+                  <li><a class="dropdown-item" href="#">Baby</a></li>
+                  <li><a class="dropdown-item" href="#">Beauty</a></li>
+                  <li><a class="dropdown-item" href="#">Books</a></li>
+                  <li><a class="dropdown-item" href="#">Car & motorbikes</a></li>
+                  <li><a class="dropdown-item" href="#">Clothing & Accessories</a></li>
+                  <li><a class="dropdown-item" href="#">Collectibles</a></li>
+                  <li><a class="dropdown-item" href="#">Computer & Accessories</a></li>
+                  <li><a class="dropdown-item" href="#">Electronic</a></li>
+                  <li><a class="dropdown-item" href="#">Furniture</a></li>
+                  <li><a class="dropdown-item" href="#">Garden & Outdoors</a></li>
+                  <li><a class="dropdown-item" href="#">Giftcards</a></li>
+                </ul>
+              </div>
+           </div>
+           <div class="box-middle">
+            <input type="text" placeholder="Search.amazon.in">
+           </div>
+           <div class="box-right">
+            <i class="bi bi-search fa-1.5x"></i>
+           </div>
+        </div>
+        <div class="flag-div vborder">
+            <div class="flag-logo">
+                <img class="flag-set" src="flag.png">
+            </div>
+            <div class="flag-flex">
+                <p class="flag-para">EN <i class="fa-solid fa-caret-down flag-icon"></i></p>
+
+            </div>
+        </div>
+        <div class="nav-text vborder">
+            <p class="textfade">Hello, sign in</p>
+            <p class="textbold"><b>Account & List</b> <i class="fa-solid fa-caret-down flag-icon"></i></p>
+        </div>
+        <div class="nav-text vborder">
+            <p class="textfade" >Returns</p>
+            <p class="textbold "> <b>& Orders</b></p>
+        </div>
+        <div class="nav-cart vborder">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+        </div>
+    </div>
+    <div class="panel">
+        <div class="panel-all" onclick="display()">
+            <i class="fa-solid fa-bars"></i><p>All</p> 
+
+        </div>
+        <div  id="show"></div>
+        <div class="panel-ops">
+            <p>Amazon miniTV</p>
+            <p> Sell</p>
+            <p>Best Sellers</p>
+            <p>Mobiles</p>
+            <p>Today's Deals</p>
+            <p>New Releases</p>
+            <p>Customer Service</p>
+            <p>Prime<i class="fa-solid fa-caret-down flag-icon"></i></p>
+        </div>
+        <div class="panel-deal">
+          <img src="parad.png" width="90%">
+        </div>
+    </div>
+    <div class="carousel slide carousel-dark " style="z-index: -10;" id="banner" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="4000">
+            <img src="asale1.jpg" class="w-100 d-block" >
+          </div>
+          <div class="carousel-item " data-bs-interval="4000">
+            <img src="asale2.jpg" class="w-100 d-block" >
+          </div>
+          <div class="carousel-item " data-bs-interval="4000">
+            <img src="asale3.jpg" class="w-100 d-block" >
+          </div>
+          <div class="carousel-item " data-bs-interval="4000">
+            <img src="asale4.jpg" class="w-100 d-block" >
+          </div>
+          <div class="carousel-item " data-bs-interval="4000">
+            <img src="asale5.jpg" class="w-100 d-block">
+          </div>
+          <div class="carousel-item " data-bs-interval="4000">
+            <img src="asale6.jpg" class="w-100 d-block" >
+          </div>
+        </div>
+        </div>
+        <div>
+          <button data-bs-target="#banner" data-bs-slide="prev" class="carousel-control-prev"><span class="carousel-control-prev-icon"></span></button> 
+        <button data-bs-target="#banner" data-bs-slide="next" class="carousel-control-next "><span class="carousel-control-next-icon"></span></button>
+      </div>
+      <div class="carousel-indicators">
+        <button class="active" data-bs-slide-to="0" data-bs-target="#banner"></button>
+        <button  data-bs-slide-to="1" data-bs-target="#banner"></button>
+        <button data-bs-slide-to="2" data-bs-target="#banner"></button>
+        <button  data-bs-slide-to="3" data-bs-target="#banner"></button>
+        <button  data-bs-slide-to="4" data-bs-target="#banner"></button>
+      </div>
+    
+    <div class="shop-section">
+        <div class=" box-1 box  card-head">
+            <div>
+                <h1 class="ms-4">Up to 75% off |<br>
+                    Headphones</h1>
+            </div>
+            <div class="d-flex ms-3">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQallRrZ9GDmBZ-vpcUUEefxcTb9tPYgY9qIA&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">Up to 75% off|boAt</p>
+                </div>
+                <div class="ms-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpsecupSudKxHNSPDzcJJj8Sf-NE7C6avA7g&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">Up to 75% off|boult</p>
+                </div>
+            </div>
+            <div class="d-flex ms-3">
+                <div>
+                    <img src="https://img-prd-pim.poorvika.com/brand/Logo-0-0021-Group-8.png" width="100" height="100">
+                    <p class="card-para">Up to 75% off|Noise</p>
+                </div>
+                <div class="ms-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtcQXpC77FK7eT9QshSisDwi7BhBUnYkO_bw&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">Up to 75% off|<br>
+                        Zebronics</p>
+                </div>
+            </div>
+            <a href="#" class="card-link">See all offers</a>
+        </div>
+        <div class="box-2 box">
+            <div>
+                <h1 class="ms-3 ">Great Indian Festival |<br>
+                    Coming soon
+                </h1>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX3i2AMIoRpg-sJcGIyTvpeYiwZbKjLTkr6sfCY4sO4HYKM-3_MsWozk_pFD5UdokJUQA&usqp=CAU"
+                    class="image" height="240" width="250">
+            </div>
+
+
+            <a href="#" class="card-link"><br>See all offers</a>
+
+        </div>
+        <div class="box-3 box">
+            <div>
+                <h1 class="ms-4">Cricket fever offers
+                </h1>
+            </div>
+            <div class="d-flex ms-3">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlSr9icodF0qAa91yhMnQ0YsB4qqsaXwLoZQ&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">Up to 60% off on TVs</p>
+                </div>
+                <div class="ms-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZW3DdvmZSi3usTmI6ZO_hdC1Q5CNxlcAEaQ&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">
+                        Jerseys starting ₹999</p>
+                </div>
+            </div>
+            <div class="d-flex ms-3">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcyrhTrx8_v9fN68Ru8mCLp-OXyMAt_brZvw&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">Up to 60% off on cricket bats</p>
+                </div>
+                <div class="ms-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0praxNFT7dTQYuQlpiE9nl6gbXzpnY0kSRg&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">Up to 40% off on mobile phones</p>
+
+
+                </div>
+            </div>
+            <a href="#" class="card-link">See all offers</a>
+        </div>
+        <div class="box-4 box">
+            <div>
+                <h1 class="ms-4">Appliances for your home | <br> Up to 55% off</h1>
+            </div>
+            <div class="d-flex ms-3">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS_LAGgxmxAlcMDrtorKc9HMnsJktZCmJXRQ&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">
+                        Air conditioners</p>
+                </div>
+                <div class="ms-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBaLLnZy1fzk5mOEfqGHSPjwWN7m-dzvrAtg&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">Refrigerators</p>
+                </div>
+            </div>
+            <div class="d-flex ms-3">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrnQdCsceH27fYpTnRyPhveaMnPJhl5-gpgw&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">Microwaves</p>
+                </div>
+                <div class="ms-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrWT8DlfTDimeyXEK2yCvncio5sALy-6iow&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">Washing Machines</p>
+                </div>
+            </div>
+            <a href="#" class="card-link">See all offers</a>
+        </div>
+
+        <div class=" box-1 box  card-head">
+            <div>
+                <h1 class="ms-4">Up to 75% off |<br>
+                    Headphones</h1>
+            </div>
+            <div class="d-flex ms-3">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQallRrZ9GDmBZ-vpcUUEefxcTb9tPYgY9qIA&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">Up to 75% off|boAt</p>
+                </div>
+                <div class="ms-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpsecupSudKxHNSPDzcJJj8Sf-NE7C6avA7g&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">Up to 75% off|boult</p>
+                </div>
+            </div>
+            <div class="d-flex ms-3">
+                <div>
+                    <img src="https://img-prd-pim.poorvika.com/brand/Logo-0-0021-Group-8.png" width="100" height="100">
+                    <p class="card-para">Up to 75% off|Noise</p>
+                </div>
+                <div class="ms-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtcQXpC77FK7eT9QshSisDwi7BhBUnYkO_bw&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">Up to 75% off|<br>
+                        Zebronics</p>
+                </div>
+            </div>
+            <a href="#" class="card-link">See all offers</a>
+        </div>
+        <div class="box-2 box">
+            <div>
+                <h1 class="ms-3 ">Great Indian Festival |<br>
+                    Coming soon
+                </h1>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX3i2AMIoRpg-sJcGIyTvpeYiwZbKjLTkr6sfCY4sO4HYKM-3_MsWozk_pFD5UdokJUQA&usqp=CAU"
+                    class="image" height="240" width="250">
+            </div>
+
+
+            <a href="#" class="card-link"><br>See all offers</a>
+
+        </div>
+        <div class="box-3 box">
+            <div>
+                <h1 class="ms-4">Cricket fever offers
+                </h1>
+            </div>
+            <div class="d-flex ms-3">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlSr9icodF0qAa91yhMnQ0YsB4qqsaXwLoZQ&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">Up to 60% off on TVs</p>
+                </div>
+                <div class="ms-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZW3DdvmZSi3usTmI6ZO_hdC1Q5CNxlcAEaQ&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">
+                        Jerseys starting ₹999</p>
+                </div>
+            </div>
+            <div class="d-flex ms-3">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcyrhTrx8_v9fN68Ru8mCLp-OXyMAt_brZvw&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">Up to 60% off on cricket bats</p>
+                </div>
+                <div class="ms-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0praxNFT7dTQYuQlpiE9nl6gbXzpnY0kSRg&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">Up to 40% off on mobile phones</p>
+
+
+                </div>
+            </div>
+            <a href="#" class="card-link">See all offers</a>
+        </div>
+        <div class="box-4 box">
+            <div>
+                <h1 class="ms-4">Appliances for your home | <br> Up to 55% off</h1>
+            </div>
+            <div class="d-flex ms-3">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS_LAGgxmxAlcMDrtorKc9HMnsJktZCmJXRQ&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">
+                        Air conditioners</p>
+                </div>
+                <div class="ms-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBaLLnZy1fzk5mOEfqGHSPjwWN7m-dzvrAtg&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">Refrigerators</p>
+                </div>
+            </div>
+            <div class="d-flex ms-3">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrnQdCsceH27fYpTnRyPhveaMnPJhl5-gpgw&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">Microwaves</p>
+                </div>
+                <div class="ms-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrWT8DlfTDimeyXEK2yCvncio5sALy-6iow&usqp=CAU"
+                        width="100" height="100">
+                    <p class="card-para">Washing Machines</p>
+                </div>
+            </div>
+            <a href="#" class="card-link">See all offers</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="foot-panel-1">
+            Back to Top
+        </div>
+        <div class="foot-panel-2">
+          <ul>
+            <p>Get to Know Us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices </a>
+            <a>Amazon Science</a>
+            
+          </ul>
+          <ul>
+            <p>Get to Know Us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices </a>
+            <a>Amazon Science</a>
+            
+          </ul>
+          <ul>
+            <p>Get to Know Us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices </a>
+            <a>Amazon Science</a>
+            
+          </ul>
+          <ul>
+            <p>Get to Know Us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices </a>
+            <a>Amazon Science</a>
+            
+          </ul>
+        </div>
+
+        <div class="foot-panel-3">
+            <div class="logo"></div>
+        </div>
+
+        <div class="foot-panel-4">
+            <div class="pages">
+                <a>Conditions of Use</a>
+                <a>Privacy Notice</a>
+                <a>You ads Privacy choices</a>
+            </div>
+            <div class="copyright">
+                © 1996-2023, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
